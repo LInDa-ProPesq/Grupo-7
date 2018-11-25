@@ -1,0 +1,74 @@
+PackratFormat: 1.4
+PackratVersion: 0.5.0
+RVersion: 3.5.1
+Repos: CRAN=https://cran.rstudio.com/
+
+Package: Rcpp
+Source: CRAN
+Version: 1.0.0
+Hash: c7273c0f0bc9f5e41f4c52a8cf571f0f
+
+Package: assertthat
+Source: CRAN
+Version: 0.2.0
+Hash: e8805df54c65ac96d50235c44a82615c
+
+Package: cellranger
+Source: CRAN
+Version: 1.1.0
+Hash: be9d203e7849f73818b36f93e9273c2c
+Requires: rematch, tibble
+
+Package: cli
+Source: CRAN
+Version: 1.0.1
+Hash: a742a3229dbf7085c3a737af10e5065b
+Requires: assertthat, crayon
+
+Package: crayon
+Source: CRAN
+Version: 1.3.4
+Hash: ff2840dd9b0d563fc80377a5a45510cd
+
+Package: fansi
+Source: CRAN
+Version: 0.4.0
+Hash: f147621f72b561485bfffcae78c4f5d5
+
+Package: packrat
+Source: CRAN
+Version: 0.5.0
+Hash: 498643e765d1442ba7b1160a1df3abf9
+
+Package: pillar
+Source: CRAN
+Version: 1.3.0
+Hash: 3e43f774fa6dfba877caca1aebbeaa6a
+Requires: cli, crayon, fansi, rlang, utf8
+
+Package: readxl
+Source: CRAN
+Version: 1.1.0
+Hash: 0497885c7882757874d6eb0650a6dcff
+Requires: Rcpp, cellranger, tibble
+
+Package: rematch
+Source: CRAN
+Version: 1.0.1
+Hash: ad4faf59e7611117ff165817074c50c7
+
+Package: rlang
+Source: CRAN
+Version: 0.3.0.1
+Hash: 35fb7a51d5d756c56f793ed9c381fb84
+
+Package: tibble
+Source: CRAN
+Version: 1.4.2
+Hash: 83895360ce4f8d2ce92eee00526b5b0b
+Requires: cli, crayon, pillar, rlang
+
+Package: utf8
+Source: CRAN
+Version: 1.1.4
+Hash: f3f97ce59092abc8ed3fd098a59e236c
