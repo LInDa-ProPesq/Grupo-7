@@ -10,7 +10,7 @@ pct <- round(idade/sum(idade)*100, digits = 1)
 pct
 lbls <- paste0(pct, "% ", lbls)
 lbls
-png(filename = "gráficos/grafico_idade.png", width = 800, height = 500, pointsize = 16)
+png(filename = "grÃ¡ficos/grafico_idade.png", width = 800, height = 500, pointsize = 16)
 par(bg = "light blue")
 pie(idade, labels = lbls, edges = 100, angle = 45, col = c("blue","purple","green","red","yellow","orange"), border = NULL, lty = NULL, main = "Idade dos correspondentes")
 dev.off()
@@ -51,7 +51,7 @@ B1.instagram = table(df$instagram, exclude = 0)
 B1.snapchat = table(df$snapchat, exclude = 0)
 B1.tumblr = table(df$tumblr, exclude = 0)
 B1.pinterest = table(df$pinterest, exclude = 0)
-png(filename="gráficos/plataformas_mais_usadas.png", width = 800, height = 500, pointsize = 16)
+png(filename="grÃ¡ficos/plataformas_mais_usadas.png", width = 800, height = 500, pointsize = 16)
 par(bg = "white")
 my_bar=barplot(B1, border=F, col = "red",names.arg = expression(Facebook, Twitter,Whatsapp, Linkedin,Youtube,Instagram,Snapchat,Tumblr,Pinterest),
                ylab = "Quantidade",
@@ -71,13 +71,12 @@ dev.off()
 
 
 #Grafico de Barras - Principais motivos de uso - Questionario B-II
-
 if (!require(readxl)) install.packages('readxl')
 library(readxl)
 df <- read_xlsx("dados/umses_graduacao_2018_vtidy.xlsx", sheet="dados")
 B1 = matrix(data = c(df$contato, df$atualizado, df$preencher, df$encontrar, df$compopiniao, df$compfoto, df$amigosja, df$profnetwork, df$novaamizade, df$compdetalhe),nrow = 61, ncol = 10)
 B1
-png(filename="gráficos/principais_motivos.png", width = 1700, height = 500, pointsize = 16)
+png(filename="grÃ¡ficos/principais_motivos.png", width = 1700, height = 500, pointsize = 16)
 par(bg = "white")
 my_bar=barplot(B1, border=F, col = "red",names.arg = expression(Manter_contato, Manter_atualizado, Tempo_livre, 
                                                                 Conteudo_interessante,Compart_opinioes, Compart_fotos, Amigos_estao,
@@ -89,19 +88,19 @@ my_bar=barplot(B1, border=F, col = "red",names.arg = expression(Manter_contato, 
 dev.off()
 
 
-#Grafico de Pizza - para Uso das mídias sociais - Tempo Gasto - Questionario B-III-3
+#Grafico de Pizza - para Uso das m?dias sociais - Tempo Gasto - Questionario B-III-3
 
 if (!require(readxl)) install.packages('readxl')
 library(readxl)
 df <- read_xlsx("dados/umses_graduacao_2018_vtidy.xlsx", sheet="dados")
 tempogasto=table(df$tempogasto)
 tempogasto
-lbls <- c("Nenhum","de 5 a 10 minutes", "de 10 a 30 minutes", "de 30 minutos até 1 hora", "de 1 a 2 horas", "de 2 a 3 horas","de 3 a 4 horas", "de 4 a 5 horas", "mais de 5 horas")
+lbls <- c("Nenhum","de 5 a 10 minutes", "de 10 a 30 minutes", "de 30 minutos at? 1 hora", "de 1 a 2 horas", "de 2 a 3 horas","de 3 a 4 horas", "de 4 a 5 horas", "mais de 5 horas")
 pct <- round(tempogasto/sum(tempogasto)*100, digits = 1)
 pct
 lbls <- paste0(pct, "% ", lbls)
 lbls
-png(filename = "gráficos/grafico_tempo_gasto.png", width = 800, height = 500, pointsize = 16)
+png(filename = "grÃ¡ficos/grafico_tempo_gasto.png", width = 800, height = 500, pointsize = 16)
 par(bg = "light blue")
 pie(tempogasto, labels = lbls, edges = 100, angle = 45, border = NULL, lty = NULL, main = "Tempo Gasto em Redes Sociais")
 dev.off()
@@ -114,32 +113,32 @@ library(readxl)
 df <- read_xlsx("dados/umses_graduacao_2018_vtidy.xlsx", sheet="dados")
 usoacademico=table(df$usoacademico)
 usoacademico
-lbls <- c("Não","Sim", "Sim, porém com restrições", "Não sei / Não tenho opinião")
+lbls <- c("NÃ£o","Sim", "Sim, porem com restriÃ§Ãµes", "Nao sei / NÃ£o tenho opiniÃ£o")
 pct <- round(usoacademico/sum(usoacademico)*100, digits = 1)
 pct
 lbls <- paste0(pct, "% ", lbls)
 lbls
-png(filename = "gráficos/grafico_utilizada_professores.png", width = 800, height = 500, pointsize = 16)
+png(filename = "grÃ¡ficos/grafico_utilizada_professores.png", width = 800, height = 500, pointsize = 16)
 par(bg = "light blue")
 pie(usoacademico, labels = lbls, edges = 100, angle = 45, border = NULL, lty = NULL, main = "Midia social deve ser utilizada pelos Professores?")
 dev.off()
 
 
-#Grafico de pizza - melhor forma de aproximação - Questionario B-III-5
+#Grafico de pizza - melhor forma de aproxima??o - Questionario B-III-5
 
 if (!require(readxl)) install.packages('readxl')
 library(readxl)
 df <- read_xlsx("dados/umses_graduacao_2018_vtidy.xlsx", sheet="dados")
 profchegaal=table(df$profchegaal)
 profchegaal
-lbls <- c("Não","Sim","Não sei / Não tenho opinião")
+lbls <- c("NÃ£o","Sim","NÃ£o sei / NÃ£o tenho opiniÃ£o")
 pct <- round(profchegaal/sum(profchegaal)*100, digits = 1)
 pct
 lbls <- paste0(pct, "% ", lbls)
 lbls
-png(filename = "gráficos/grafico_aproximacao_professor.png", width = 800, height = 500, pointsize = 16)
+png(filename = "grÃ¡ficos/grafico_aproximacao_professor.png", width = 800, height = 500, pointsize = 16)
 par(bg = "light blue")
-pie(profchegaal, labels = lbls, edges = 100, angle = 45, border = NULL, lty = NULL, main = "Midia social deve ser utilizada pelos Professores?")
+pie(profchegaal, labels = lbls, edges = 100, angle = 45, border = NULL, lty = NULL, main = "Midia social Ã© a melhor forma de aproximiÃ§Ã£o?")
 dev.off()
 
 
@@ -150,14 +149,14 @@ library(readxl)
 df <- read_xlsx("dados/umses_graduacao_2018_vtidy.xlsx", sheet="dados")
 melhoraresul=table(df$melhoraresul)
 melhoraresul
-lbls <- c("Não","Sim","Não sei / Não tenho opinião")
+lbls <- c("NÃ£o","Sim","NÃ£o sei / NÃ£o tenho opiniÃ£o")
 pct <- round(melhoraresul/sum(melhoraresul)*100, digits = 1)
 pct
 lbls <- paste0(pct, "% ", lbls)
 lbls
-png(filename = "gráficos/grafico_melhores_resultados.png", width = 800, height = 500, pointsize = 16)
+png(filename = "grÃ¡ficos/grafico_melhores_resultados.png", width = 800, height = 500, pointsize = 16)
 par(bg = "light blue")
-pie(melhoraresul, labels = lbls, edges = 100, angle = 45, border = NULL, lty = NULL, main = "Midia social deve ser utilizada pelos Professores?")
+pie(melhoraresul, labels = lbls, edges = 100, angle = 45, border = NULL, lty = NULL, main = "Melhores resultados serÃ£o alcanÃ§ados com a integraÃ§Ã£o?")
 dev.off()
 
 
@@ -168,13 +167,13 @@ library(readxl)
 df <- read_xlsx("dados/umses_graduacao_2018_vtidy.xlsx", sheet="dados")
 B1 = matrix(data = c(df$distracao, df$usoindev, df$prejintera, df$bulling, df$continadeq),nrow = 61, ncol = 5)
 B1
-png(filename="gráficos/dificuldades_redes_sociais.png", width = 800, height = 500, pointsize = 16)
+png(filename="grÃ¡ficos/dificuldades_redes_sociais.png", width = 800, height = 500, pointsize = 16)
 par(bg = "white")
 my_bar=barplot(B1, border=F, col = "red",names.arg = expression(distracao, uso_indevido, prejudica_interacao, cyberbullying, conteudo_inadequado),
                ylab = "Quantidade",
                xlab = " ",
                ylim = c(0,130),
-               main = "Principais dificuldades do uso das mídias sociais em um ambiente educacional")
+               main = "Principais dificuldades do uso das mÃ­dias sociais em um ambiente educacional")
 dev.off()
 
 
@@ -185,14 +184,14 @@ library(readxl)
 df <- read_xlsx("dados/umses_graduacao_2018_vtidy.xlsx", sheet="dados")
 evioinfo=table(df$evioinfo)
 evioinfo
-lbls <- c("Excelente","Bom","Indiferente","Pobre", "Muito Pobre")
+lbls <- c("Excelente","Bom","Indiferente","Ruim", "Muito ruim")
 pct <- round(evioinfo/sum(evioinfo)*100, digits = 1)
 pct
 lbls <- paste0(pct, "% ", lbls)
 lbls
-png(filename = "gráficos/envio_de_informacoes_pais.png", width = 800, height = 500, pointsize = 16)
+png(filename = "grÃ¡ficos/envio_de_informacoes_pais.png", width = 800, height = 500, pointsize = 16)
 par(bg = "light blue")
-pie(evioinfo, labels = lbls, edges = 100, angle = 45, border = NULL, lty = NULL, main = "Envio de informações da escola para os pais.")
+pie(evioinfo, labels = lbls, edges = 100, angle = 45, border = NULL, lty = NULL, main = "Envio de informaÃ§Ãµes da escola para os pais.")
 dev.off()
 
 if (!require(readxl)) install.packages('readxl')
@@ -200,12 +199,12 @@ library(readxl)
 df <- read_xlsx("dados/umses_graduacao_2018_vtidy.xlsx", sheet="dados")
 grandeuso=table(df$grandeuso)
 grandeuso
-lbls <- c("Excelente","Bom","Indiferente","Pobre", "Muito Pobre")
+lbls <- c("Excelente","Bom","Indiferente","Ruim", "Muito ruim")
 pct <- round(grandeuso/sum(grandeuso)*100, digits = 1)
 pct
 lbls <- paste0(pct, "% ", lbls)
 lbls
-png(filename = "gráficos/uso_promocional.png", width = 800, height = 500, pointsize = 16)
+png(filename = "grÃ¡ficos/uso_promocional.png", width = 800, height = 500, pointsize = 16)
 par(bg = "light blue")
 pie(grandeuso, labels = lbls, edges = 100, angle = 45, border = NULL, lty = NULL, main = "Motivos promocionais.")
 dev.off()
@@ -215,12 +214,12 @@ library(readxl)
 df <- read_xlsx("dados/umses_graduacao_2018_vtidy.xlsx", sheet="dados")
 facegrupo=table(df$facegrupo)
 facegrupo
-lbls <- c("Excelente","Bom","Indiferente","Pobre", "Muito Pobre")
+lbls <- c("Excelente","Bom","Indiferente","Ruim", "Muito ruim")
 pct <- round(facegrupo/sum(facegrupo)*100, digits = 1)
 pct
 lbls <- paste0(pct, "% ", lbls)
 lbls
-png(filename = "gráficos/grupo_facebook.png", width = 800, height = 500, pointsize = 16)
+png(filename = "grÃ¡ficos/grupo_facebook.png", width = 800, height = 500, pointsize = 16)
 par(bg = "light blue")
 pie(facegrupo, labels = lbls, edges = 100, angle = 45, border = NULL, lty = NULL, main = "Grupos no Facebook para se comunicar com os alunos")
 dev.off()
@@ -230,14 +229,14 @@ library(readxl)
 df <- read_xlsx("dados/umses_graduacao_2018_vtidy.xlsx", sheet="dados")
 trocainfo=table(df$trocainfo)
 trocainfo
-lbls <- c("Excelente","Bom","Indiferente","Pobre", "Muito Pobre")
+lbls <- c("Excelente","Bom","Indiferente","Ruim", "Muito ruim")
 pct <- round(trocainfo/sum(trocainfo)*100, digits = 1)
 pct
 lbls <- paste0(pct, "% ", lbls)
 lbls
-png(filename = "gráficos/troca_informacao.png", width = 800, height = 500, pointsize = 16)
+png(filename = "grÃ¡ficos/troca_informacao.png", width = 800, height = 500, pointsize = 16)
 par(bg = "light blue")
-pie(trocainfo, labels = lbls, edges = 100, angle = 45, border = NULL, lty = NULL, main = "Uso para troca de informações")
+pie(trocainfo, labels = lbls, edges = 100, angle = 45, border = NULL, lty = NULL, main = "Uso para troca de informaÃ§Ãµes")
 dev.off()
 
 if (!require(readxl)) install.packages('readxl')
@@ -245,14 +244,14 @@ library(readxl)
 df <- read_xlsx("dados/umses_graduacao_2018_vtidy.xlsx", sheet="dados")
 compinfopal=table(df$compinfopal)
 compinfopal
-lbls <- c("Excelente","Bom","Indiferente","Pobre", "Muito Pobre")
+lbls <- c("Excelente","Bom","Indiferente","Ruim", "Muito ruim")
 pct <- round(compinfopal/sum(compinfopal)*100, digits = 1)
 pct
 lbls <- paste0(pct, "% ", lbls)
 lbls
-png(filename = "gráficos/troca_informacao_professor.png", width = 800, height = 500, pointsize = 16)
+png(filename = "grÃ¡ficos/troca_informacao_professor.png", width = 800, height = 500, pointsize = 16)
 par(bg = "light blue")
-pie(compinfopal, labels = lbls, edges = 100, angle = 45, border = NULL, lty = NULL, main = "Estudantes e professores podem compartilhar informações entre si")
+pie(compinfopal, labels = lbls, edges = 100, angle = 45, border = NULL, lty = NULL, main = "Estudantes e professores podem compartilhar informaÃ§Ãµes entre si")
 dev.off()
 
 if (!require(readxl)) install.packages('readxl')
@@ -260,12 +259,12 @@ library(readxl)
 df <- read_xlsx("dados/umses_graduacao_2018_vtidy.xlsx", sheet="dados")
 quadrovirtual=table(df$quadrovirtual)
 quadrovirtual
-lbls <- c("Excelente","Bom","Indiferente","Pobre", "Muito Pobre")
+lbls <- c("Excelente","Bom","Indiferente","Ruim", "Muito ruim")
 pct <- round(quadrovirtual/sum(quadrovirtual)*100, digits = 1)
 pct
 lbls <- paste0(pct, "% ", lbls)
 lbls
-png(filename = "gráficos/pinterest.png", width = 800, height = 500, pointsize = 16)
+png(filename = "grÃ¡ficos/pinterest.png", width = 800, height = 500, pointsize = 16)
 par(bg = "light blue")
 pie(quadrovirtual, labels = lbls, edges = 100, angle = 45, border = NULL, lty = NULL, main = "Pinterest")
 dev.off()
