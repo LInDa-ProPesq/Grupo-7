@@ -15,19 +15,19 @@ library(readxl)
 
   
 ## Introdução
-  Este trabalho é referente a uma pesquisa feita sobre o uso de redes sociais pelos discentes e docentes da universidade, e o que os mesmos acham sobre a utilização das redes sociais pelos professores/universidade com intuito educacional e de aproximação dos alunos com os professores/universidade.  
+  Este trabalho é referente a uma pesquisa feita sobre o uso de redes sociais pelos discentes e docentes da universidade, e o que os mesmos acham sobre a utilização das redes sociais pelos professores/universidade com intuito educacional e dessa aproximação dos alunos com os professores/universidade.  
   
-  Com base em um questionário aplicado na Universidade Estadual Paulista - unesp no campus de Bauru, este trabalho visa responder a seguinte pergunta de pesquisa:  
+  Com base em um questionário aplicado na Universidade Estadual Paulista - UNESP no campus de Bauru, este trabalho visa responder a seguinte pergunta de pesquisa:  
     
   > **_Quais são as influências das mídias sociais sobre discentes da instituição de nível superior unesp - Bauru - SP?_**  
   
 ***  
 ## Perfil dos participantes 
-  Essa pesquisa contou com 61 respostas validas para gerar seus resultados, o perfil dos participantes foi levantado através de perguntas sobre gênero, idade, estado civil e sobre filhos.  Foi constatado que os participantes dessa pesquisa em sua totalidade são solteiros e não possuem filhos. Fato provavelmente justificado pela faixa etária dos participantes e pelo alvo da pesquisa ter sido uma universidade. 
+  Essa pesquisa contou com 61 respostas validas para gerar seus resultados, o perfil dos participantes foi levantado através de perguntas sobre gênero, idade, estado civil e filhos.  Foi constatado que os participantes dessa pesquisa em sua totalidade são solteiros e não possuem filhos. Fato provavelmente justificado pela faixa etária dos participantes e pelo alvo da pesquisa ter sido uma universidade. 
   
 ![Gênero dos participantes](graficos/aed_survey_sexo_tidy.png)
   
-  Os participantes foram em sua maioria homens, 37  homens respondentes contra 24 mulheres, e entre 21 e 25 anos. Como mostrado no gráfico abaixo.
+  Os participantes foram em sua maioria homens, sendo 37  homens contra 24 mulheres, e entre 21 e 25 anos. Como mostrado no gráfico abaixo.
   
   ![Idade dos participantes](graficos/grafico_idade.png)
 
@@ -35,19 +35,19 @@ library(readxl)
   
 ## Redes Sociais
 
-  Rede social é uma plataforma cujo objetivo é conectar pessoas e compartilhar informações entre elas, tanto de caráter pessoal quanto profissional, educacional ou comercial. Elas se materializam na forma de sites e aplicativos, reunindo usuários que compactuam dos mesmos valores e interesses.  
-  Com a rápida acensão das redes sociais diversas dinâmicas do nosso cotidiano mudaram, buscas de emprego, amigos, compras, entre outros estão cada vez mais compreendidas dentro das redes sociais. 
+  Rede social é uma plataforma cujo objetivo é conectar pessoas e compartilhar informações entre elas, tanto de caráter pessoal ou profissional, quanto educacional ou comercial. Elas se materializam na forma de sites e aplicativos, reunindo usuários que compactuam dos mesmos valores e interesses.  
+  Com a rápida acensão das redes sociais, diversas dinâmicas do nosso cotidiano mudaram: buscas por emprego, amigos, compras, entre outros estão cada vez mais compreendidas dentro das redes sociais. 
   
   E é nesse cenário que as redes de ensino se encontram e necessitam analisar quais são as vantagens, desavantagens e empecilhos para poderem, ou não, adentrarem de vez nessa nova era da tecnologia. 
   
 ***  
 
 ## Pesquisa
-Esta pesquisa tentou entender tanto o perfil de uso das redes sociais pelos respondentes quanto seu posicionamento sobre a utilização de redes sociais no âmbito acadêmico. Através de pergunta sobre o tempo gasto em redes sociais e quais são as mais utilizadas a pesquisa pode entender com qual afinco esse publico utiliza as redes no seu dia a dia.
+Esta pesquisa tentou entender tanto o perfil de uso das redes sociais pelos respondentes quanto seu posicionamento sobre a utilização de redes sociais no âmbito acadêmico. Através de pergunta sobre o tempo gasto em redes sociais e quais são as mais utilizadas, a pesquisa pode entender com qual afinco esse publico utiliza as redes no seu dia a dia.
 
 ![Gráfico tempo gasto em redes sociais](graficos/grafico_tempo_gasto.png)
 
-Os motivos de uso das redes também foi consultado, mostrando bastante sobre o perfil de uso dos respondentes, onde os usuários demonstram utilizar redes sociais principalmente para manter-se atualizado e em contato com grupos de amigo.
+Os motivos de uso das redes também foi consultado, mostrando bastante sobre o perfil de uso dos respondentes, onde os usuários demonstram utilizar redes sociais principalmente para manter-se atualizado e em contato com grupos de amigos.
 
  ![Principais motivos de uso](graficos/principais_motivos.png)
 
@@ -55,7 +55,7 @@ Os motivos de uso das redes também foi consultado, mostrando bastante sobre o p
 
   No campo institucional, criar planos para que a universidade participe destes meios pode potencializar ainda mais a ligação dos alunos e funcionários com a universidade. Em sala de aula, as redes sociais permitem que estudantes e professores usem a criatividade, promovam debate, gerem conteúdos e aprendam. 62.3% dos que responderam a pesquisa, acham que sim, o professor deve utilizar as mídias sociais como uma forma de interação das aulas e 31.1% concordam mas com restrições.
   
-  Apesar de mais de 62% dos participantes acreditarem que as redes sociais devem ser utilizadas pelos professores, apenas 37,7% acreditam que essa é a melhor maneira de aproximação dos professores com os alunos. Mostrado no gráfico abaixo. 
+  Apesar de mais de 62% dos participantes acreditarem que as redes sociais devem ser utilizadas pelos professores, apenas 37,7% acreditam que essa é a melhor maneira de aproximação dos professores com os alunos. O gráfico abaixo ilustra isso. 
   
   ![Mídia social melhor forma de aproximação?](graficos/grafico_aproximacao_professor.png)
   
